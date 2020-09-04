@@ -1,8 +1,9 @@
+html {
+  height: 100%;
+}
+
 body {
-  display: flex;
-  height: 100vh;
   font-family: "Lato", sans-serif;
-  flex-direction: column;
   background: #a770ef; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
@@ -25,40 +26,46 @@ h1 {
 }
 
 form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.my-btn {
-  text-align: center;
-  border: none;
-  text-decoration: none;
+.fa-plus-circle {
   color: #fff;
-  background-color: #1f7ce6;
-  font-size: 32px;
+}
+
+.fa-minus-square {
+  color: #dc3545;
+}
+
+.fa-check-circle {
+  padding-left: 10px;
+  color: #28a745;
 }
 
 #thing-to-do {
-  width: 30%;
+  width: 40%;
+  height: 30px;
   text-align: center;
+  margin-right: 5px;
 }
 
 #to-do-list {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-left: 0%;
-    padding-top: 20px;
-    width: 20%;
+  margin: 0 auto;
+  padding-left: 0%;
+  padding-top: 20px;
 }
 
 .to-do-item {
-  text-align: center;
   background: #ffffff;
-  margin-bottom: 20px;
-  padding: 10px;
+  padding: 15px;
+  width: 30%;
   list-style-type: none;
-  width: 100%;
   margin: 20px auto;
+  word-wrap: break-word;
+}
+
+.item-tool {
+  float: right;
+  margin: 0 auto;
 }
