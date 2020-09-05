@@ -1,5 +1,7 @@
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,6 +19,7 @@ body {
     #cf8bf3,
     #a770ef
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
 }
 
 h1 {
@@ -38,9 +41,17 @@ form {
   color: #dc3545;
 }
 
+.fa-minus-square:hover {
+  color: #ff0019
+}
+
 .fa-check-circle {
   padding-left: 10px;
   color: #28a745;
+}
+
+.fa-check-circle:hover {
+  color: #00b92b
 }
 
 #thing-to-do {
@@ -63,6 +74,10 @@ form {
   list-style-type: none;
   margin: 20px auto;
   word-wrap: break-word;
+}
+
+.to-do-item-checked {
+  text-decoration: line-through;
 }
 
 .item-tool {
